@@ -1,0 +1,61 @@
+------------Curiosidades------------
+origin = url (Como un alias)
+main = master
+
+
+-----------------Crear repo-------------
+
+github
+git add .
+git commit -m "primer comentario"
+git remote add origin https://gitlab.desarrollo.lda/gconf/no_eliminar.git
+git branch -M main
+git push -u origin main
+
+------------------Comparando archivos---------------
+git diff 
+git diff --staged (Ver esto)
+
+----------------LOGS--------------
+git log
+
+git log --oneline (Ver ultimo comit de las ramas)
+
+git log --graph (Ver los cambios de forma grafica
+
+git log --all (ver todos los cambios)
+
+SE PUEDEN COMBINAR ESTAS OPCIONES!!!!
+
+--------------- Hacer un push(El primero)-----------
+
+git push https://gitlab.desarrollo.lda/gconf/no_eliminar.git
+
+ERROR --> ! [remote rejected] main -> main (pre-receive hook declined)
+error: failed to push some refs to 'https://gitlab.desarrollo.lda/gconf/no_eliminar.git'
+Se soluciona haciendo un git pull (actualizando)
+
+
+------------- Ramificacion y fusion----------------------
+
+git branch (nombre_nueva_rama) Copia de una rama. Copia de la que estes, es decir, ver a traves de git branch en cual estas y hace la copia de esa
+
+git branch (nombre_nueva_rama) (nombre_nueva_rama2) lo mismo que antes pero aqui se realizan dos copias de donde estes con git branch
+
+git switch/checkout nombre_rama para cambiar de rama
+
+git merge (nombre rama local) fusion de los commits locales con la rama original
+
+git branch -D nombre_rama_local (Elimina la rama)
+
+git branch -M (nombre rama) Para renombrar la rama
+
+--------- Clone, fetch, pull y branches remotas -----------
+
+
+
+git branch -r (ver ramas a parte de la de main (principal) y las locales)
+
+git fetch para sincronizar los cambios (¿Archivos nuevos?)
+git merge para fusionar cambios  || Se pueden ver si dos ramas se han fuxionado o no con git branch --merge git branch --no-merge
+git push combinacion de fetch y merge
