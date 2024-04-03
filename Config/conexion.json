@@ -1,8 +1,8 @@
 {
     "gitlab":{
-        "url": "https://gitlab.desarrollo.lda",
+        "url": "https://gitlab.es",
         "acces_token" : {
-            "Private-Token":"glpat-Jtm2pnS3zRqtJQ1MRStR"
+            "Private-Token":"token"
         } 
     }
 }

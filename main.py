@@ -5,7 +5,10 @@ except Exception as e:
     print(str(e))
 
 
-def main():
+def main() -> None:
+    """
+    Main del proyecto, controles de lo que se quiere hacer
+    """
     from GitLab.main import main as menu
     from Config.leerJson import read_json
 
@@ -21,9 +24,12 @@ def main():
 
 
 
-def logs(logtype:str):
-
-
+def logs(logtype:str) -> None:
+    """
+    Crea logs paara controlar las acciones del usuario y poder ver fallos en ejecución
+    Args:
+        logtype (str): _description_
+    """
     date = datetime.now().strftime("%H_%M_%S")
     global logger
     logger = logging.getLogger(logtype)
